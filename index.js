@@ -22,7 +22,7 @@ $(function () {
             },
             kogaClass() {
                 if (!this.winner) return
-                return this.winner == 'Koga' ? 'animated swing infinite winner' : 'animated hinge'
+                return this.winner == 'Koga' ? 'animated tada infinite winner' : 'animated hinge'
             },
             inuyashaStyle() {
                 return {
@@ -31,12 +31,15 @@ $(function () {
             },
             inuyashaClass() {
                 if (!this.winner) return
-                return this.winner == 'InuYasha' ? 'animated swing infinite winner' : 'animated hinge'
+                return this.winner == 'InuYasha' ? 'animated tada infinite winner' : 'animated hinge'
             }
         },
         methods: {
             startRace() {
-                this.restart()
+                if (this.winner) {
+                    this.restart()
+                    return
+                }
                 this.racing = true
 
                 this.interval = setInterval(() => {
@@ -45,7 +48,7 @@ $(function () {
             },
             progressPlayers() {
                 this.tick++
-                this.inuyasha += (Math.random() >= .3) ? 1 : 0
+                this.inuyasha += (Math.random() >= .5) ? 1 : 0
                 this.koga += (Math.random() >= .5) ? 1 : 0
                 this.checkVictory()
             },

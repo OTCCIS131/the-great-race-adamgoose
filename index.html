@@ -22,15 +22,10 @@
 
 <body>
     <div class="container-fluid" id="app">
-        <!-- <button class="btn btn-primary" @click="startRace" :disabled="racing || winner">Start Race</button>
-            <button class="btn btn-warning" @click="restart" :disabled="racing">Start Over</button>
-            <pre>{{ $data }}</pre> -->
         <img src="./images/jewel.png" id="jewel" :style="{opacity: racing ? 0 : 1}" @click="startRace">
-
         <img src="./images/kagome.png" id="kagome" class="animated" :class="{bounce: winner, infinite: winner}">
         <img src="./images/koga.png" id="koga" class="racer" :class="kogaClass" :style="kogaStyle">
         <img src="./images/inuyasha.png" id="inuyasha" class="racer" :class="inuyashaClass" :style="inuyashaStyle">
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

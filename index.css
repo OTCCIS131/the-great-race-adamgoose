@@ -34,6 +34,7 @@ body {
     left: 0;
     bottom: 10vh;
     transition: left .5s; 
+    transform: scaleX(-1);
 }
 
 .winner {
