@@ -1,0 +1,44 @@
+body {
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#jewel {
+    width: 20vw;
+    transition: opacity .5s;
+}
+
+#kagome {
+    width: 15vw;
+    position: absolute;
+    right: 0;
+    bottom: 10vh;
+}
+
+#koga {
+    width: 10vw;
+    bottom: 35vh;
+}
+
+#inuyasha {
+    width: 10vw;
+}
+
+.racer {
+    position: absolute;
+    left: 0;
+    bottom: 10vh;
+    transition: left .5s; 
+}
+
+.winner {
+    bottom: 20vh;
+    left: 40vw !important;
+    width: 30vw !important;
+    transition: bottom .5s, left .5s, width .5s;
+}
