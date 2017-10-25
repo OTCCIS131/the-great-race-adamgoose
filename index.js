@@ -48,8 +48,8 @@ $(function () {
             },
             progressPlayers() {
                 this.tick++
-                this.inuyasha += (Math.random() >= .5) ? 1 : 0
-                this.koga += (Math.random() >= .5) ? 1 : 0
+                this.inuyasha += (Math.random() >= Math.random()) ? 1 : 0
+                this.koga += (Math.random() >= Math.random()) ? 1 : 0
                 this.checkVictory()
             },
             checkVictory() {
